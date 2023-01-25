@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
@@ -15,18 +16,33 @@
 <body>
     <header>
         <h1>Rock<br>Paper<br>Scissors</h1>
-        <div>
-            <p>Score</p>
+        <div class="score">
+            <p class="score-title">Score</p>
             <p id="score">0</p>
         </div>
     </header>
     <div class="choices-container">
-        <img src="images/paper.png" alt="paper hand">
-        <img src="images/scissors.png" alt="scissors hand">
-        <img src="images/rock.png" alt="rock hand">
+        <div class="paper-div">
+            <img class="choice" id="paper" src="images/paper.png" alt="paper hand">
+        </div>
+        <div class="scissors-div">
+            <img class="choice" id="scissors" src="images/scissors.png" alt="scissors hand">
+        </div>
+        <div class="rock-div">
+            <img class="choice" id="rock" src="images/rock.png" alt="rock hand">
+        </div>
+        <img class="triangle" src="images/triangle.png" alt="traingle connecting hands" />
+    </div>
+    <div class="btn-container">
+        <button class="btn">Rules</button>
+    </div>
+    <div class="modal">
+        <h2>Rules</h2>
+        <img src="images/rules.png"
+            alt="diagram showing rock beats scissors, paper beats rock, and sciccors beats paper" />
+        <div class="closeout"></div>
     </div>
 
-    <button class="btn">Rules</button>
 </body>
 
 </html>
