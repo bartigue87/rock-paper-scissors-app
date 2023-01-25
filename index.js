@@ -1,4 +1,5 @@
 const modal = document.querySelector(".modal");
+const modalContainer = document.querySelector(".modal-container");
 const btn = document.querySelector(".btn");
 const closeout = document.querySelector(".closeout");
 const paper = document.getElementById("paper");
@@ -20,10 +21,12 @@ let playerHand;
 
 function showModal() {
   modal.style.visibility = "visible";
+  modalContainer.style.visibility = "visible";
 }
 
 function hideModal() {
   modal.style.visibility = "hidden";
+  modalContainer.style.visibility = "hidden";
 }
 
 btn.addEventListener("click", showModal);
